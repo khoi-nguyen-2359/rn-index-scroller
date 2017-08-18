@@ -18,6 +18,7 @@ class IndexScroller extends React.Component {
 	_index = []
 	_paddingTop = 0
 	_paddingBottom = 0
+	_lastIndex = -1
 	
 	constructor(props) {
 		super(props)
