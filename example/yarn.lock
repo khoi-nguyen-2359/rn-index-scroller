@@ -3504,9 +3504,9 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
-rn-index-scroller@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/rn-index-scroller/-/rn-index-scroller-0.0.1.tgz#e611004171bf9914a288d6630dfc1b8792a84b40"
+rn-index-scroller@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/rn-index-scroller/-/rn-index-scroller-0.0.2.tgz#35060e20ae27e80d0a67123055b838573ead95da"
 
 rndm@1.2.0:
   version "1.2.0"
