@@ -6,7 +6,7 @@ React Native component for instant scrolling through indexed items (like iOS con
 ## Installation
 
 ```
-npm install --save rn-index-scroller@khoi-nguyen-2359/rn-index-scroller#master
+npm install --save rn-index-scroller
 ```
 
 ## Usage example
@@ -35,4 +35,10 @@ const index = upperAlphabetIndex // or any arrays like ['a', '2', 'E']
           left: 0,
           bottom: 0
         }} />
+```
+
+This library was tested with:
+```
+"react": "16.0.0-alpha.12",
+"react-native": "0.47.1",
 ```
