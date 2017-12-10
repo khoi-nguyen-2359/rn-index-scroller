@@ -128,7 +128,11 @@ class IndexScroller extends React.Component {
 	}
 }
 
-export { IndexScroller }
+export { 
+	IndexScroller,
+	lowerAlphabetIndex,
+	upperAlphabetIndex
+}
 
 const styles = StyleSheet.create({
 	container: {

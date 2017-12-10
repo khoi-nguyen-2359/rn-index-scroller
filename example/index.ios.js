@@ -12,26 +12,33 @@ import {
   View
 } from 'react-native';
 
-import { IndexScroller } from 'rn-index-scroller'
+import { 
+  IndexScroller,
+  lowerAlphabetIndex,
+  upperAlphabetIndex
+} from 'rn-index-scroller'
+
+const index = upperAlphabetIndex
 
 export default class example extends Component {
+  state = {
+    currentIndex: ''
+  }
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Index Scroller Example
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-        <IndexScroller onChange={(i)=>{console.log(i)}} style={{
-          fontSize: 20,
+        <View style={styles.currentIndexWrap}>
+          <Text style={styles.currentIndex}>
+            {index[this.state.currentIndex]}
+          </Text>
+        </View>
+        <IndexScroller onChange={(i)=>{this.setState({currentIndex: i})}} index={index} style={{
+          fontSize: 16,
           paddingVertical: 10,
-          paddingTop: 60,
+          paddingTop: 120,
           fontWeight: 'bold',
           color: 'blue',
           backgroundColor: 'transparent',
@@ -57,11 +64,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
+  currentIndex: {
+    fontSize: 20,
+    fontWeight: 'bold',
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    color: 'white',
   },
+  currentIndexWrap: {
+    justifyContent: 'center',
+    width: 60,
+    height: 60,
+    borderRadius: 10,
+    backgroundColor: '#444'
+  }
 });
 
 AppRegistry.registerComponent('example', () => example);
