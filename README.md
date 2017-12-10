@@ -36,3 +36,9 @@ const index = upperAlphabetIndex // or any arrays like ['a', '2', 'E']
           bottom: 0
         }} />
 ```
+
+This library was tested with:
+```
+"react": "16.0.0-alpha.12",
+"react-native": "0.47.1",
+```
